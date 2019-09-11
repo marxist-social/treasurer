@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <p>What would you like to do?</p>
+
+                    <ul>
+                        <li><a href="{{ route('cashcollection.create') }}">Record new cash collection</a></li>
+                        <li><a href="{{ route('cashcollection.index') }}">View / edit previous cash collections</a></li>
+                        <li><a href="#">Export my collections by month</a></li>
+                        <li><a href="#">Edit my account settings</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
