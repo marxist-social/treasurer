@@ -24,6 +24,8 @@ class CashCollectionController extends Controller
      */
     public function create($type = null)
     {
+        //dd($type);
+
         // Has a 'type' been set on this request?
         if (is_null($type))
             return view('collections.choose');

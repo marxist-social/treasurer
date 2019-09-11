@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('cashcollections/create/{type?}', 'CashCollectionController@create')->name('cashcollections.create'); // optional 'type' for cash collections
-Route::resource('cashcollection', 'CashCollectionController');
+Route::get('/cashcollections/create/{type?}', 'CashCollectionController@create')->name('cashcollections.create'); // optional 'type' for cash collections
+Route::resource('cashcollections', 'CashCollectionController');

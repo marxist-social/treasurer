@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Create a new collection. Which type?</div>
+                <div class="card-header">You'd like to record a new cash collection. What are you collecting cash for?</div>
 
                 <div class="card-body">
                     <ul>
-                        <li><a href="{{ route('cashcollection.create', ['type' => 'campaign']) }}">Campaign</a></li>
-                        <li><a href="{{ route('cashcollection.create', ['type' => 'levy']) }}">Levy</a></li>
-                        <li><a href="{{ route('cashcollection.create', ['type' => 'subs']) }}">Subs</a></li>
-                        <li><a href="{{ route('cashcollection.create', ['type' => 'table']) }}">Merch Table</a></li>
+                        <li><a href="{{ route('cashcollections.create') }}/campaign">Campaign</a></li>
+                        <li><a href="{{ route('cashcollections.create') }}/levy">Levy</a></li>
+                        <li><a href="{{ route('cashcollections.create') }}/subs">Subs</a></li>
+                        <li><a href="{{ route('cashcollections.create') }}/table">Merch table</a></li>
                     </ul>
                 </div>
             </div>
